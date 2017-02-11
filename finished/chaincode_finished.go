@@ -118,16 +118,17 @@ func (t *SimpleChaincode) read(stub shim.ChaincodeStubInterface, args []string) 
 }
 
 //
-func (t*SimpleChaincode) add(stub shim.ChaincodeStubInterface, args int)([]byte, error)
+func (t*SimpleChaincode) add(stub shim.ChaincodeStubInterface, args string)([]byte, error)
 {
 	var key, jsonResp string
 	var err error 
-	var qua int 
+	var qua string 
 	fmt.Println("running add()")
-
+Aval, _ = strconv.Atoi(string(Avalbytes))
 	if args ==0 
 	return nil , errors.new(" wrong entry")
-	qua == args 
+	
+	qua, _ = strconv.Atoi(string(args))
 	 fmt.Println(" added")
 	 return nil,nil 
 }
