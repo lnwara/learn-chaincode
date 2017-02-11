@@ -19,7 +19,7 @@ package main
 import (
 	"errors"
 	"fmt"
-
+    "strconv"
 	"github.com/hyperledger/fabric/core/chaincode/shim"
 )
 
@@ -113,3 +113,19 @@ func (t *SimpleChaincode) read(stub shim.ChaincodeStubInterface, args []string) 
 
 	return valAsbytes, nil
 }
+
+//
+func (t*SimpleChaincode) add(stub shim.ChaincodeStubInterface, args int)([]byte, error)
+{
+	var key, jsonResp string
+	var err error 
+	var qua int 
+	fmt.Println("running add()")
+
+	if args ==0 
+	return nil , errors.new(" wrong entry")
+	qua == args 
+	 fmt.Println(" added")
+	 return nil,nil 
+}
+
